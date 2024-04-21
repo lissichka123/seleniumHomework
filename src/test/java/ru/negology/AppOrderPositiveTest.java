@@ -15,7 +15,7 @@ public class AppOrderPositiveTest {
 
     @BeforeAll
     public static void setupAll() {
-        System.setProperty("webdriver.chrome.driver", "driver/win/chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
     }
     @BeforeEach
     public void beforeEach() {
